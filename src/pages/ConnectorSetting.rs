@@ -1170,10 +1170,10 @@ impl Component for ConnectorSetting {
                                             html!{
                                                 <button
                                                     type="button"
-                                                    class="btn btn-secondary"
+                                                    class="btn btn-primary"
                                                     data-bs-dismiss="modal"
                                                 >
-                                                    {"close"}
+                                                    {"Close"}
                                                 </button> 
                                             }
                                         }else{
@@ -1181,10 +1181,10 @@ impl Component for ConnectorSetting {
                                                 <>
                                                     <button
                                                         type="button"
-                                                        class="btn btn-secondary"
+                                                        class="btn btn-primary"
                                                         data-bs-dismiss="modal"
                                                     >
-                                                        {"close"}
+                                                        {"Close"}
                                                     </button> 
                                                 </>
                                             }
@@ -1229,7 +1229,7 @@ impl Component for ConnectorSetting {
                                     
                                     <button
                                         type="button"
-                                        class="btn btn-primary"
+                                        class="btn btn-danger"
                                         data-bs-dismiss="modal"
                                         data-bs-toggle="modal"
                                         data-bs-target="#DeleteResult"
@@ -1251,7 +1251,7 @@ impl Component for ConnectorSetting {
                               >
                                   <div class="modal-header" style="color:black;"
                                   >
-                                      <h5 class="modal-tittle"><p> {format!("{} !",self.msg_err.header)} </p> </h5>
+                                      <h5 class="modal-tittle" style="font-family: Alexandria; color: #A73034;"><p> {format!("{} !",self.msg_err.header)} </p> </h5>
                                       <button 
                                           type="button"
                                           class="btn-close"
@@ -1267,7 +1267,14 @@ impl Component for ConnectorSetting {
                                   >
                                       <button
                                           type="button"
-                                          class="btn btn-primary"
+                                            style="
+                                        background:#A73034;
+                                        border-color:#A73034;
+                                        color:white;
+                                        border-radius:15px;
+                                        width: 70px;
+                                        height: 40px; 
+                                    "
                                           data-bs-dismiss="modal"
                                           onclick=self.link.callback(|_| Msg::Direct) 
                                       >
@@ -1342,7 +1349,7 @@ impl Component for ConnectorSetting {
                                 >
                                     <button
                                         type="button"
-                                        class="btn btn-secondary"
+                                        class="btn btn-primary"
                                         data-bs-dismiss="modal"
                                         onclick=self.link.callback(|_| Msg::Ignore) 
                                     >

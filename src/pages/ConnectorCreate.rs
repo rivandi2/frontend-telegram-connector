@@ -293,17 +293,6 @@ impl Component for ConnectorCreate {
                     <div>
 
                         <div class="input-group" style=" margin: auto; width: 300px">
-                            <input type="text" id="emailInput" class="form-control p-3 my-2 " placeholder="Chat ID"
-                            style="
-                                height:30px;
-                                margin:auto;       
-                            "
-                            value={self.new_connector.chatid.clone()}
-                            oninput=self.link.callback(|data: InputData| Msg::InputGroupChatID(data.value))
-                            />
-                        </div>
-
-                        <div class="input-group" style=" margin: auto; width: 300px">
                             <input type="text" id="emailInput" class="form-control p-3 my-2 " placeholder="Bot Token"
                             style="
                                 height:30px; 
@@ -311,6 +300,17 @@ impl Component for ConnectorCreate {
                             "
                             value={self.new_connector.token.clone()}
                             oninput=self.link.callback(|data: InputData| Msg::InputBotTok(data.value))
+                            />
+                        </div>
+
+                        <div class="input-group" style=" margin: auto; width: 300px">
+                            <input type="text" id="emailInput" class="form-control p-3 my-2 " placeholder="Chat ID"
+                            style="
+                                height:30px;
+                                margin:auto;       
+                            "
+                            value={self.new_connector.chatid.clone()}
+                            oninput=self.link.callback(|data: InputData| Msg::InputGroupChatID(data.value))
                             />
                         </div>
 
