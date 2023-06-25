@@ -271,7 +271,7 @@ impl Component for ConnectorCreate {
     fn view(&self) -> Html {
         html! {
             <div class="base-form">
-                <div class="create-connector">
+                <div class="create-connector"  style="width: 500px">
                     <h5>{"Create Connector Form"}</h5>
 
                     <div class="input-group" style=" margin: auto; width: 300px">
@@ -332,7 +332,7 @@ impl Component for ConnectorCreate {
                             data-bs-target="#display_msg"
                             onclick=self.link.callback(|_| Msg::CreateValidate)
                         >
-                            {"Create new Connector"}
+                            {"Create New Connector"}
                         </button>
                     </div>
 

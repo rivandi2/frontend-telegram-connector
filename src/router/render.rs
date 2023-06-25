@@ -8,10 +8,6 @@ use crate::pages::{
     ConnectorHome::ConnectorHome,
     ConnectorCreate::ConnectorCreate,
     ConnectorSetting::ConnectorSetting,
-    RobotCreate::RobotCreate,
-    RobotInput::RobotInput,
-    RobotProject::RobotProject,
-    RobotHome::RobotHome,
     LandingPage::LandingPage,
     Login::Login,
     Register::Register,
@@ -94,30 +90,6 @@ impl Component for Render {
                     }
                 }
 
-
-
-
-                // Robot
-                AppRoute::RobotInput {idProject} => {
-                    html! {
-                        <RobotInput idProject=idProject/>
-                    }
-                }
-                AppRoute::RobotCreate => {
-                    html! {
-                        <RobotCreate/>
-                    }
-                }
-                AppRoute::RobotHome => {
-                    html! {
-                        <RobotHome/>
-                    }
-                }
-                AppRoute::RobotProject => {
-                    html! {
-                        <RobotProject/>
-                    }
-                }
                 _ => {
                     route_service.set_route("/", ());
                     html! {

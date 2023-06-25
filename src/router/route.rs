@@ -22,16 +22,6 @@ pub enum AppRoute {
     #[to="/WebhookCreate"]
     WebhookCreate,
 
-
-
-    #[to="/RobotHome"]
-    RobotHome,
-    #[to="/RobotCreate"]
-    RobotCreate,
-    #[to="/RobotInput/{idProject}"]
-    RobotInput{idProject : String},
-    #[to="/RobotProject"]
-    RobotProject,
     #[to="/"]
     Home,
 }

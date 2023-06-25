@@ -91,27 +91,7 @@ impl Component for NavtopConnector {
                     <ul class="sidebarMenuInner">
                     <Anchor route=AppRoute::LandingPage>
                         <li>{"Digital Business"} <span>{"Web Development"}</span></li>
-                    </Anchor>
-                        //Robot
-                        <Anchor route=AppRoute::RobotProject>
-                        <li class="sidebarDrop"><a>{"Robot Automation"}</a>
-                            // <ul class="serviceProjects">
-                            //     <li>
-                            //         <Anchor route=AppRoute::RobotHome>
-                            //                     {"Create"}
-                            //         </Anchor>
-                            //     </li>
-                            // </ul>
-                            // <ul class="serviceProjects">
-                            //     <li>
-                                    
-                            //                     {"Project"}
-                                    
-                            //     </li>
-                            // </ul>
-                        </li>
-                        </Anchor>
-    
+                    </Anchor>    
                         //Connector
                         <Anchor route=AppRoute::ConnectorHome>
                         <li class="sidebarDrop"><a>{"TelConnect"}</a>
@@ -145,27 +125,7 @@ impl Component for NavtopConnector {
                     <ul class="sidebarMenuInner">
                     <Anchor route=AppRoute::LandingPage>
                         <li>{"Digital Business"} <span>{"Web Development"}</span></li>
-                    </Anchor>
-                        //Robot
-                        <Anchor route=AppRoute::RobotProject>
-                        <li class="sidebarDrop"><a>{"Robot Automation"}</a>
-                            // <ul class="serviceProjects">
-                            //     <li>
-                            //         <Anchor route=AppRoute::RobotHome>
-                            //                     {"Create"}
-                            //         </Anchor>
-                            //     </li>
-                            // </ul>
-                            // <ul class="serviceProjects">
-                            //     <li>
-                                    
-                            //                     {"Project"}
-                                    
-                            //     </li>
-                            // </ul>
-                        </li>
-                        </Anchor>
-    
+                    </Anchor>  
                         //Connector
                         <Anchor route=AppRoute::ConnectorHome>
                         <li class="sidebarDrop"><a>{"TelConnect"}</a>
@@ -186,14 +146,4 @@ impl Component for NavtopConnector {
 
         
     }
-}
-
-#[derive(Properties, PartialEq, Clone, Debug)]
-pub struct Props {
-    pub on_name_entry: Callback<String>,
-}
-
-pub fn Rerender(props: &Props) -> Html {
-    props.on_name_entry.emit(String::from("Bob"));
-    html! { "Hello" }
 }

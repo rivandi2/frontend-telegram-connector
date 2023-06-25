@@ -279,7 +279,7 @@ impl Component for WebhookCreate {
     fn view(&self) -> Html {
         html! {
             <div class="base-form">
-                <div class="create-connector">
+                <div class="create-connector" style="width: 500px">
                     <h5>{"Create Webhook Form"}</h5>
 
                     <div class="input-group" style=" margin: auto; width: 300px">

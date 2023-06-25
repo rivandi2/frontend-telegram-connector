@@ -51,16 +51,11 @@ impl Component for LandingPage {
                         
                     </div>
                     <div class="services">
-                        <h4><b>{"Services"}</b></h4>
-                            <h5>{"◉ Robot Automation"}</h5>
-                                    <p>{"Robotic process automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate humans actions interacting with digital systems and software. With automation robots built on this platform, it is intended to simplify your task management. Go explore more, be wild, and be more productive!
-                                    "}
-                                    </p>
-                            <h5>{"◉ TelConnect"}</h5>
-                                    <p>{"TelConnect is an application that can channel notifications from Jira to popular social media application such as Telegram.
-                                    The distribution of these notifications can reduce the need to continuously connect to Jira through a web browser and also act as a means for users to communicate directly
-                                    "}
-                                    </p>
+                        <h4><b>{"TelConnect"}</b></h4>
+                            <p>{"TelConnect is an application that can channel notifications from Jira to popular social media application such as Telegram.
+                            The distribution of these notifications can reduce the need to continuously connect to Jira through a web browser and also act as a means for users to communicate directly
+                            "}
+                            </p>
                     </div>
                 </div>
             </div>

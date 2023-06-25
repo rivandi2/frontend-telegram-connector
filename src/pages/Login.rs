@@ -127,7 +127,6 @@ impl Component for Login {
                             access_token: String::new()
                         };
 
-                        
                         if meta.status.is_success(){
                             match data{
                                 Ok(dataok) =>{
@@ -232,7 +231,7 @@ impl Component for Login {
         type Anchor = RouterAnchor<AppRoute>;
         html! {
             <div class="base-form">
-                <div class="create-connector">
+                <div class="create-connector" style="width: 500px">
                     <h5>{"Login Form"}</h5>
                     <div class="input-group" style=" margin: auto; width: 300px">
                         <input type="text"  id="emailInput" class="form-control p-3 my-2 " placeholder="Username"
