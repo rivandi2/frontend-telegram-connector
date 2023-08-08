@@ -36,7 +36,7 @@ impl Component for LandingPage {
                 <div class="landing-page">
                     <div class="container">
                         <div class="header-area">
-                            <div class="logo"><b>{"Telkom "}</b>{"Indonesia"}</div>
+                            <div class="logo"><b>{"Web "}</b>{"Application"}</div>
                         </div>
                         <div class="info">
                             <h1>{"Digital Business Management"}</h1>
