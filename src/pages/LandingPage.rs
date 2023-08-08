@@ -44,7 +44,6 @@ impl Component for LandingPage {
                         </div>
                         <div class="image">
                             <img src="img/landingpage.png" width="600px" height="600px"/>
-                                
                         </div>
                         
                         <div class="clearfix"></div>

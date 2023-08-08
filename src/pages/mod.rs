@@ -7,3 +7,4 @@ pub mod Login;
 pub mod Register;
 pub mod Profile;
 pub mod WebhookCreate;
+pub mod Tutorial;

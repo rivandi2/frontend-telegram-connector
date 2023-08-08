@@ -97,6 +97,11 @@ impl Component for NavtopConnector {
                         <li class="sidebarDrop"><a>{"TelConnect"}</a>
                         </li>
                         </Anchor>
+
+                        <Anchor route=AppRoute::Tutorial>
+                        <li class="sidebarDrop"><a>{"Tutorial"}</a>
+                        </li>
+                        </Anchor>
                         
                     </ul>
                 </div>
@@ -129,6 +134,11 @@ impl Component for NavtopConnector {
                         //Connector
                         <Anchor route=AppRoute::ConnectorHome>
                         <li class="sidebarDrop"><a>{"TelConnect"}</a>
+                        </li>
+                        </Anchor>
+
+                        <Anchor route=AppRoute::Tutorial>
+                        <li class="sidebarDrop"><a>{"Tutorial"}</a>
                         </li>
                         </Anchor>
                         

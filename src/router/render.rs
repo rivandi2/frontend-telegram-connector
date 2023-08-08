@@ -12,7 +12,8 @@ use crate::pages::{
     Login::Login,
     Register::Register,
     Profile::Profile,
-    WebhookCreate::WebhookCreate
+    WebhookCreate::WebhookCreate,
+    Tutorial::Tutorial
 };
 use crate::router::route::AppRoute;
 
@@ -87,6 +88,12 @@ impl Component for Render {
                 AppRoute::WebhookCreate => {
                     html! {
                         <WebhookCreate/>
+                    }
+                }
+
+                AppRoute::Tutorial => {
+                    html! {
+                        <Tutorial/>
                     }
                 }
 

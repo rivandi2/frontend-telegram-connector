@@ -21,6 +21,8 @@ pub enum AppRoute {
     Profile,
     #[to="/WebhookCreate"]
     WebhookCreate,
+    #[to="/Tutorial"]
+    Tutorial,
 
     #[to="/"]
     Home,
